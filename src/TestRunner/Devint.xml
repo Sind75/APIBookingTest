@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Test on Devint enviroment" parallel = "tests">
+    <test name="Test ne">
+        <groups>
+            <run>
+                <include name="Devint"/>
+            </run>
+        </groups>
+        <parameter name="env" value="Devint"></parameter>
+<!--        <parameter name="url" value="sdfsdfsdf/booking/"></parameter>-->
+<!--        <parameter name="id" value="123"></parameter>-->
+<!--        <parameter name="url" value=""></parameter>-->
+        <classes>
+            <class name="CallApiGetJsonTest"></class>
+            <class name="CallApiPostJsonTest"></class>
+            <class name="CallApiPutJsonTest"></class>
+            <class name="CallApiGetXMLTest"></class>
+        </classes>
+    </test>
+</suite>

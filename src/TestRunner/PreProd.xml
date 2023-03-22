@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Test on PreProd enviroment" parallel = "tests">
+    <test name="Test ne">
+        <groups>
+            <run>
+                <include name="PreProd"/>
+            </run>
+        </groups>
+        <parameter name="env" value="PreProd"></parameter>
+        <classes>
+            <class name="CallApiGetJsonTest"></class>
+            <class name="CallApiPostJsonTest"></class>
+            <class name="CallApiPutJsonTest"></class>
+            <class name="CallApiGetXMLTest"></class>
+        </classes>
+    </test>
+</suite>

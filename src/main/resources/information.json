@@ -1,0 +1,11 @@
+{
+  "firstname": "Man",
+  "lastname": "Tran",
+  "totalprice" : 222,
+  "depositpaid" : true,
+  "bookingdates": {
+    "checkin": "11/09/2023",
+    "checkout": "13/09/2023"
+  },
+  "additionalneeds": "Hungry up"
+}
