@@ -105,7 +105,6 @@ public class Action {
         }
     }
     public static String getFirstNameJson(HttpResponse<String> response){
-//        System.out.println(response.getBody());
         JSONObject jsonObject = new JSONObject(response.getBody());
         return jsonObject.getString("firstname");
     }

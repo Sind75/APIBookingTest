@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Test on Devint enviroment" parallel = "tests">
-    <test name="Test ne">
+    <test name="Test ne1">
         <groups>
             <run>
                 <include name="Devint"/>
@@ -11,7 +11,7 @@
 <!--        <parameter name="id" value="123"></parameter>-->
 <!--        <parameter name="url" value=""></parameter>-->
         <classes>
-            <class name="CallApiGetJsonTest"></class>
+            <class name="CallApiGetJsonTest"/>
             <class name="CallApiPostJsonTest"></class>
             <class name="CallApiPutJsonTest"></class>
             <class name="CallApiGetXMLTest"></class>

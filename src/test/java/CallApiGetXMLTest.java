@@ -9,7 +9,7 @@ public class CallApiGetXMLTest {
     @Parameters({"env"})
     @Test(groups = {("Devint"),("PreProd"),("Prod")})
     public void callAPIGetMethodXML(String env){
-        response = Action.callAPIGetMethodXML(Action.getUrl(env));
+        response = Action.callAPIGetMethodXML(Action.getUrl(env).concat(booking).concat(Action.getId(env)));
         Action.verifyCallApi(response);
     }
 

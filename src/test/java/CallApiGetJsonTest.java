@@ -7,12 +7,11 @@ import org.testng.annotations.Test;
 public class CallApiGetJsonTest {
     public HttpResponse<String> response;
     String booking = "/booking/";
-    @Parameters({"url"})
+    @Parameters({"env"})
     @Test(groups = {("Devint"),("PreProd"),("Prod")})
     public void callAPIJsonGetMethod(String env)  {
 //        response = Action.callAPIGet(env+id);
-        response = Action.callAPIGetMethodJSON(Action.getUrl(env).
-                concat(booking).concat(Action.getId(env)));
+        response = Action.callAPIGetMethodJSON(Action.getUrl(env).concat(booking).concat(Action.getId(env)));
         Action.verifyCallApi(response);
     }
     @Parameters({"env"})
