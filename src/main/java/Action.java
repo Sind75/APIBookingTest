@@ -25,11 +25,11 @@ import java.util.Properties;
 import java.util.Set;
 
 public class Action {
-    public static final String FILE_CONFIG = "C:\\Users\\tran.man\\IdeaProjects\\MavenProject\\src\\main\\resources\\enviroments.properties";
-    public static final String FILE_SCHEMA_JSON = "C:\\Users\\tran.man\\IdeaProjects\\MavenProject\\src\\main\\resources\\schema.json";
-    public static final String FILE_SCHEMA_JSON_POST = "C:\\Users\\tran.man\\IdeaProjects\\MavenProject\\src\\main\\resources\\schema_post.json";
-    public static final String FILE_INFORMATION = "C:\\Users\\tran.man\\IdeaProjects\\MavenProject\\src\\main\\resources\\information.json";
-    public static final String FILE_SCHEMA_XSD = "C:\\Users\\tran.man\\IdeaProjects\\MavenProject\\src\\main\\resources\\schema.xsd";
+    public static final String FILE_CONFIG = "src/main/resources/enviroments.properties";
+    public static final String FILE_SCHEMA_JSON = "src/main/resources/schema.json";
+    public static final String FILE_SCHEMA_JSON_POST = "src/main/resources/schema_post.json";
+    public static final String FILE_INFORMATION = "src/main/resources/information.json";
+    public static final String FILE_SCHEMA_XSD = "src/main/resources/schema.xsd";
     public static Properties properties(){
         Properties properties = new Properties();
         try {
